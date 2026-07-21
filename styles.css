@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+    margin: 0;
+    background-color: #f0f4f8; /* Un fondo gris claro y suave */
+    color: #333; /* Texto principal oscuro para buen contraste */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; /* Para que header, main y footer se apilen verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+}
+
+header {
+    background-color: #770808; /* Un azul oscuro elegante */
+    color: white;
+    padding: 20px; /* Añadir padding a los lados también */
+    text-align: left; /* Alinear el logo a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra para elevación */
+}
+
+.logo {
+    max-width: 1200px; /* Limitar el ancho del logo si es necesario */
+    margin: 0 auto; /* Centrar el logo dentro del header si el header ocupa todo el ancho */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+main {
+    flex-grow: 1; /* Permite que el main ocupe el espacio restante */
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    padding: 40px; /* Mantener un padding alrededor del contenedor principal */
+}
+
+.container {
+    background: #fff; /* Fondo blanco para el contenedor principal */
+    border-radius: 12px; /* Bordes más redondeados para un look moderno */
+    padding: 40px; /* Mayor espacio interior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada y suave */
+    text-align: center;
+    width: 90%; /* Hacer el contenedor más adaptable */
+    max-width: 600px; /* Limitar el ancho máximo del contenedor principal */
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    font-size: 2.2em; /* Título más grande */
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Un azul oscuro elegante */
+    font-weight: 500;
+}
+
+.info-section p {
+    font-size: 1.1em; /* Texto más legible */
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Estirar los elementos para ocupar el ancho del contenedor */
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+    text-align: left; /* Alinear la etiqueta a la izquierda */
+    font-weight: 500;
+}
+
+input[type="file"] {
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+button {
+    padding: 15px 25px; /* Botón más grande */
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #000000; /* Mantener el azul principal */
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados para el botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #850303;
+}
+
+footer {
+    background-color: #a10808; /* Otro tono de azul oscuro para el footer */
+    color: #ddd;
+    text-align: center;
+    padding: 20px; /* Añadir padding a los lados también */
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    max-width: 1200px; /* Limitar el ancho del texto del footer si es necesario */
+    margin: 0 auto; /* Centrar el texto dentro del footer si el footer ocupa todo el ancho */
+}
+
+/* Media query para hacerlo más responsive en pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        text-align: center; /* Centrar el logo en pantallas más pequeñas */
+    }
+
+    .logo {
+        margin: 0 auto; /* Asegurar que el logo esté centrado */
+    }
+
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .info-section h2 {
+        font-size: 1.8em;
+    }
+
+    .form-section button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center; /* Centrar el texto del footer en pantallas más pequeñas */
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
